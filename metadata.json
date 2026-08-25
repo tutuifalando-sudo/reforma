@@ -1,0 +1,6 @@
+{
+  "name": "Reforma 360",
+  "description": "Aplicativo inteligente de estimativa, planejamento e lista de materiais de reforma em minutos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

