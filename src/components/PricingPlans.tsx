@@ -103,6 +103,14 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
 
             {/* Price */}
             <div className="my-6">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-slate-400 line-through">
+                  De R$ 49,90
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold">
+                  60% OFF
+                </span>
+              </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-sm font-bold text-slate-400">R$</span>
                 <span className="text-4xl sm:text-5xl font-black text-slate-900 font-['Outfit',sans-serif]">
@@ -203,6 +211,14 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
 
             {/* Price */}
             <div className="my-6">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-orange-900/50 line-through">
+                  De R$ 89,90
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-orange-100 text-orange-700 text-[10px] font-bold">
+                  55% OFF
+                </span>
+              </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-sm font-bold text-orange-600">R$</span>
                 <span className="text-4xl sm:text-5xl font-black text-slate-900 font-['Outfit',sans-serif]">
@@ -268,25 +284,6 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
             <span>QUERO O PLANO PROFISSIONAL (R$ 39,90)</span>
             <ArrowRight className="w-4 h-4 text-white" />
           </a>
-        </div>
-      </div>
-
-      {/* 7 Days Guarantee Box */}
-      <div className="max-w-3xl mx-auto bg-gradient-to-br from-emerald-50 via-emerald-100/40 to-teal-50 rounded-3xl p-6 sm:p-8 border-2 border-emerald-300 shadow-[0_12px_32px_-8px_rgba(16,185,129,0.22)] flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-        <div className="w-20 h-20 rounded-3xl bg-emerald-500 text-white flex items-center justify-center shrink-0 border-2 border-emerald-400 shadow-md shadow-emerald-500/25">
-          <ShieldCheck className="w-10 h-10" />
-        </div>
-        <div>
-          <span className="text-xs font-black uppercase tracking-wider text-emerald-800">
-            Garantia Incondicional
-          </span>
-          <h3 className="text-xl font-black text-emerald-950 font-['Outfit',sans-serif] mt-0.5">
-            Teste por 7 dias sem nenhum risco
-          </h3>
-          <p className="text-xs sm:text-sm text-emerald-900/90 mt-1.5 leading-relaxed font-medium">
-            Experimente o <strong className="text-emerald-950 font-bold">Reforma 360</strong>. Se por qualquer motivo não fizer sentido para você ou não
-            ajudar a planejar sua reforma, basta solicitar o cancelamento e devolvemos 100% do seu dinheiro.
-          </p>
         </div>
       </div>
 

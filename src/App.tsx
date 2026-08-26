@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UrgencyTimerBanner } from './components/UrgencyTimerBanner';
 import { HeroSection } from './components/HeroSection';
+import { CompactGuaranteeCard } from './components/CompactGuaranteeCard';
 import { ProblemSection } from './components/ProblemSection';
 import { WhatYouWillReceive } from './components/WhatYouWillReceive';
 import { AppInsideGallery } from './components/AppInsideGallery';
@@ -130,6 +131,9 @@ export default function App() {
                 onStartCalculation={handleStartCalculation}
                 onExplorePlans={scrollToPlans}
               />
+
+              {/* Compact 7 Days Guarantee Box */}
+              <CompactGuaranteeCard />
 
               {/* A Verdade Sobre Reformar Sem Planejamento */}
               <ProblemSection />

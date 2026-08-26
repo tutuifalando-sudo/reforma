@@ -22,9 +22,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-950 tracking-tight leading-[1.12] font-['Outfit',sans-serif] mb-4">
-          Antes de chamar o pedreiro,{' '}
+          Descubra o valor real da sua reforma em 3 minutos{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500">
-            descubra o valor real da sua reforma.
+            antes de ligar para o pedreiro
           </span>
         </h1>
 
@@ -35,18 +35,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </p>
 
         {/* App Mockup Showcase */}
-        <div className="relative max-w-2xl mx-auto mb-6 px-2">
-          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-orange-950/10 border border-slate-200/80 bg-white group">
+        <div className="relative max-w-3xl lg:max-w-4xl mx-auto mb-8 px-2 sm:px-4">
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-orange-950/15 border border-slate-200/80 bg-white group">
             <img
               src="https://i.postimg.cc/HnXPhTNb/Gemini-Generated-Image-5leovq5leovq5leo.jpg"
               alt="Mockup do aplicativo Reforma 360"
               referrerPolicy="no-referrer"
-              className="w-full h-auto aspect-video object-cover transform transition-transform duration-500 group-hover:scale-[1.01]"
+              className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-[1.01]"
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              width={672}
-              height={378}
             />
           </div>
         </div>
@@ -60,14 +58,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           >
             <span>QUERO CALCULAR MINHA REFORMA</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-
-          <button
-            id="hero-plans-btn"
-            onClick={onExplorePlans}
-            className="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm sm:text-base border border-slate-300 hover:border-slate-400 shadow-sm transition-all"
-          >
-            Ver Planos e Acesso (R$ 19,90)
           </button>
         </div>
 

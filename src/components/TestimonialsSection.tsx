@@ -8,6 +8,8 @@ import {
   ArrowRight,
   Sparkles,
   Award,
+  Calculator,
+  Users,
 } from 'lucide-react';
 
 interface TestimonialsSectionProps {
@@ -118,6 +120,41 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
               <div>
                 <h4 className="font-bold text-slate-900 text-sm">Juliana M.</h4>
                 <p className="text-xs text-slate-400">Reforma de Sala e Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Faixa de Destaque Ponta a Ponta */}
+        <div className="mt-6 w-full bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-4 sm:py-5 sm:px-8 border border-slate-800 shadow-md">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-800/80">
+            {/* Item 1 */}
+            <div className="flex items-center justify-center gap-3.5 pb-3 sm:pb-0 sm:pr-4">
+              <div className="w-11 h-11 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-400 shrink-0 shadow-xs">
+                <Calculator className="w-5 h-5" />
+              </div>
+              <div className="text-left">
+                <div className="text-2xl sm:text-3xl font-black text-white font-['Outfit',sans-serif] tracking-tight leading-none">
+                  57.932
+                </div>
+                <div className="text-xs sm:text-sm text-slate-300 font-medium mt-1">
+                  reformas já calculadas
+                </div>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="flex items-center justify-center gap-3.5 pt-3 sm:pt-0 sm:pl-4">
+              <div className="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 shadow-xs">
+                <Users className="w-5 h-5" />
+              </div>
+              <div className="text-left">
+                <div className="text-2xl sm:text-3xl font-black text-white font-['Outfit',sans-serif] tracking-tight leading-none">
+                  70.312
+                </div>
+                <div className="text-xs sm:text-sm text-slate-300 font-medium mt-1">
+                  usuários ativos
+                </div>
               </div>
             </div>
           </div>
